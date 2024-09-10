@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVIA</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <style>
+        h1 { color: #fc00ff; }
+      </style>
+    <div id="inicio" class="box">
+
+        <h1>Museo de Historia Natural de Unillanos - Trivia</h1>
+
+     
+        <p>
+            <input type="text" id="txtNombre" class="input" placeholder="Ingresa tu nombre">
+        </p>
+        <p>
+           
+            <center><button class="btn blue" onclick="validarNombre()" >ENTRAR</button></center>
+            
+        </p>
+
+
+    </div>
+
+    <div id="categoria" class="box oculto">
+
+        <h1 id="msgHola"></h1>
+
+        <h3>Selecciona una categoría:</h3>
+        
+        <p>
+            <center><button class="btn blue" onclick="cargarPreguntasTipo('A')" >Aves</button></center>
+        </p>
+
+        <p>
+            <center><button class="btn blue" onclick="cargarPreguntasTipo('B')" >Insectos</button></center>
+        </p>
+    </div>
+
+    <div id="jugar" class="box oculto">
+
+        <div id="timer"></div>
+
+        <h1 id="msgCategoria"></h1>
+
+        <div class="preguntas">
+ 
+            <h3 id="pregunta"></h3>
+            <p>
+                <div id="alternativas">
+
+                </div>
+            </p>
+            <div id="divrpta" class="oculto"> 
+            </div>
+             
+            <p>
+                <center> <button class="btn blue" onclick="siguiente()" >Siguiente > </button></center>
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="resultados" class="box oculto">
+
+        <h1>RESULTADOS</h1>
+        <br>
+        <div id="divresultado">
+            
+        </div>
+
+         
+
+        <h3 class="separador" >Jugar Nuevamente</h3>
+        
+        <p>
+            <Center><button class="btn blue" onclick="cargarPreguntasTipo('A')" >Aves</button>
+            &nbsp;&nbsp;
+            <button class="btn blue" onclick="cargarPreguntasTipo('B')" >Insectos</button>
+            &nbsp;&nbsp;
+            <button class="btn blue" onclick="cerrarSesion()" >Cerrar Sesión</button></Center>
+        </p>
+ 
+
+        
+    </div>
+   
+    
+</body>
+<script src="js/main.js" type="text/javascript"></script>
+</html>
