@@ -13,8 +13,8 @@ body {
 
 
 .input {
-    color: white;
-    border: 2px solid #e81cff;
+    color: #000000;
+    border: 2px solid #38bcfa;
     border-radius: 10px;
     padding: 10px 25px;
     background: transparent;
@@ -22,7 +22,7 @@ body {
   }
   
   .input:active {
-    box-shadow: 2px 2px 15px #e81cff inset;
+    box-shadow: 2px 2px 15px #38bcfa inset;
   }
   
 
@@ -88,7 +88,7 @@ body {
     width: 70%;
     margin: 100px auto;
     text-align: center;
-    border: 1px solid #fc00ff;
+    border: 1px solid #38bcfa;
     padding: 20px;
     background: #fff;
     border-radius: 10px;
