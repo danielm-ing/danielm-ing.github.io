@@ -139,3 +139,31 @@ body {
     text-align: center;
     margin: 0 auto;
 }
+
+/* Estilo para el mensaje emergente */
+.mensaje-emergente {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 3px solid #38bcfa;
+  z-index: 1000;
+  text-align: center;
+  max-width: 80%; /* Limita el ancho del mensaje emergente */
+  overflow: auto; /* Añade barra de desplazamiento si es necesario */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para la imagen dentro del mensaje emergente */
+.mensaje-emergente img {
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+}
+
+/* Estilo para el botón dentro del mensaje emergente */
+.mensaje-emergente .btn {
+  margin-top: 10px;
+}
