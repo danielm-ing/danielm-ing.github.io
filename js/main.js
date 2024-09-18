@@ -196,10 +196,10 @@ function checkRpta(rpta) {
     // Comparar la respuesta del usuario con la correcta
     if (respuestasUsuario[index] === rptas[index]) {
         imagen.src = imgCorrecta;
-        explicacion.textContent = `¡Excelente! :) ${explicaciones[index]}`;
+        explicacion.textContent = `${explicaciones[index]}`;
     } else {
         imagen.src = imgIncorrecta;
-        explicacion.textContent = `Respuesta Incorrecta ... ${explicaciones[index]}`;
+        explicacion.textContent = `${explicaciones[index]}`;
     }
 
     mensajeEmergente.appendChild(imagen);
