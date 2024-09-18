@@ -131,8 +131,8 @@ function iniciarTimer() {
 
 function checkRpta(rpta) {
     // Variables para las imágenes
-    const imgCorrecta = 'img/correcta.png'; // Cambia esta ruta
-    const imgIncorrecta = 'img/incorrecta.png'; // Cambia esta ruta
+    const imgCorrecta = 'img/correcta.gif'; // Cambia esta ruta
+    const imgIncorrecta = 'img/incorrecta.gif'; // Cambia esta ruta
 
     // Explicaciones con datos curiosos
     const explicacionesTipoA = [
