@@ -32,32 +32,29 @@ function cargarPreguntasTipo(tipo) {
 
     if (tipo === 'A') {
         preguntas = [
-            "1.- ¿Cuál es el pájaro que tiene plumas muy coloridas y vive en la selva?",
-            "2.- ¿Cuál es el pájaro que se asocia con la paz?",
-            "3.- ¿Cómo se llama el pájaro que puede imitar sonidos y palabras humanas?",
-            "4.- ¿Qué pájaro tiene un pico muy largo y delgado que usa para comer néctar de las flores?",
-            "5.- ¿Cuál es el pájaro que no puede volar y vive en la Antártida?"
+            "1.- ¿Cuál es el ave más grande que se puede ver en los llanos de Colombia?",
+            "2.- ¿Qué ave de los llanos tiene un canto muy particular que parece un silbido?",
+            "3.- ¿Cuál es el ave que tiene plumas de colores brillantes y es conocida por su danza en el aire durante el cortejo?",
+            "4.- ¿Qué ave cazadora, famosa por su velocidad, se encuentra en los llanos?",
+            "5.- ¿Qué ave de los llanos hace un nido en forma de bolsa?"
         ];
-
+        
+        
         alternativas = [
-            ["Guacamayo", "Águila", "Pingüino"],        // Respuesta correcta: Guacamayo (índice 0)
-            ["Paloma", "Flamenco", "Águila"],            // Respuesta correcta: Paloma (índice 0)
-            ["Halcon", "Búho", "Loro"],              // Respuesta correcta: Loro (índice 2)
-            ["Colibrí", "Buitre", "Cernícalo"],         // Respuesta correcta: Colibrí (índice 0)
-            ["Pato", "Gaviota", "Pingüino"]             // Respuesta correcta: Pingüino (índice 2)
+            ["Cóndor de los Andes", "Avestruz", "Caracara"],  // Respuesta correcta: Cóndor de los Andes (índice 0)
+            ["Cernícalo", "Tordo", "Colibrí"],                  // Respuesta correcta: Tordo (índice 1)
+            ["Flamenco", "Tucán", "Guacamayo"],                 // Respuesta correcta: Guacamayo (índice 2)
+            ["Aguilucho", "Halcón", "Gavilán"],                 // Respuesta correcta: Halcón (índice 1)
+            ["Mirlo", "Tejedor", "Paloma"]                       // Respuesta correcta: Tejedor (índice 1)
         ];
-
-        rptas = [
-            0, // Guacamayo
-            0, // Paloma
-            2, // Loro
-            0, // Colibrí
-            2  // Pingüino
-        ];
+        
+        
+        rptas = [0, 1, 2, 1, 1];  // Índices de las respuestas correctas
 
         titulo = 'Aves';
 
     } else if (tipo === 'B') {
+        
         preguntas = [
             "1.- ¿Cuál de estos insectos tiene alas y puede volar?",
             "2.- ¿Qué insecto hace un sonido chirriante y vive en los jardines?",
@@ -81,6 +78,7 @@ function cargarPreguntasTipo(tipo) {
             1, // Tienen 6 patas
             1  // Libélula
         ];
+
 
         titulo = 'Insectos';
     }
@@ -136,12 +134,12 @@ function checkRpta(rpta) {
 
     // Explicaciones con datos curiosos
     const explicacionesTipoA = [
-        "La respuesta correcta es Guacamayo. Estos impresionantes pájaros tienen plumas de colores brillantes que pueden incluir rojo, verde, azul y amarillo. Los guacamayos son conocidos por su inteligencia y su habilidad para imitar sonidos. Viven en las selvas tropicales de América Central y del Sur, y juegan un papel importante en sus ecosistemas al dispersar semillas.",
-        "La respuesta correcta es Paloma. Las palomas han sido símbolos de paz y amor en muchas culturas a lo largo de la historia. Su capacidad para regresar a su hogar desde largas distancias ha sido utilizada en mensajería durante siglos. En la antigüedad, las palomas mensajeras se empleaban para enviar mensajes importantes y también participaron en la Primera Guerra Mundial.",
-        "La respuesta correcta es Loro. Los loros son famosos por su capacidad para imitar la voz humana y otros sonidos. Estos pájaros poseen una inteligencia notable y algunos pueden aprender a reconocer palabras y frases. Su visión es muy aguda, permitiéndoles detectar colores que son invisibles para los humanos.",
-        "La respuesta correcta es Colibrí. Los colibríes tienen el vuelo más rápido de todos los pájaros, batiendo sus alas hasta 80 veces por segundo. Son esenciales para la polinización de muchas flores debido a su alimentación con néctar, y tienen un metabolismo extremadamente alto que les permite mantener su energía durante el vuelo.",
-        "La respuesta correcta es Pingüino. Los pingüinos son aves que han adaptado su cuerpo para la vida acuática. Aunque no pueden volar, son excelentes nadadores, con alas que actúan como aletas. En la Antártida, los pingüinos Adelia y Emperador se han adaptado a las duras condiciones del hielo y la nieve."
-    ];
+    "La respuesta correcta es El Cóndor de los Andes, es el ave más grande y puede volar a grandes altitudes, siendo un símbolo de libertad.",
+    "La respuesta correcta es El Tordo, tiene un canto que parece un silbido y se asocia con la llegada de la lluvia en la región.",
+    "La respuesta correcta es El Guacamayo, es conocido por sus plumas brillantes y su danza en el aire, lo que es parte de su cortejo para atraer pareja.",
+    "La respuesta correcta es El Halcón, es famoso por su velocidad y agilidad, y utiliza su rapidez para atrapar presas en pleno vuelo.",
+    "La respuesta correcta es El Tejedor, construye nidos en forma de bolsa para protegerse de depredadores, utilizando materiales que encuentra en su entorno."
+];
 
     const explicacionesTipoB = [
         "La respuesta correcta es Grillo. Los grillos tienen alas que les permiten volar y producir un sonido característico conocido como chirrido, creado al frotar sus alas contra sus patas. Este chirrido es utilizado para atraer a las hembras durante la temporada de apareamiento y puede ser un indicador de la temperatura ambiental.",
@@ -256,3 +254,4 @@ function reiniciar() {
 function cerrarSesion() {
     window.location.reload();
 }
+
